@@ -1,0 +1,10 @@
+The country of England is antiquated enough to still rely on material tokens for currency. This is
+made up of pounds, £, and pence, p, and there are
+eight coins in general circulation:
+
+1p, 2p, 5p, 10p, 20p, 50p, £1 (100p) and £2 (200p).
+
+How many different ways can £5 be made, using any number of coins?
+
+A correct submission to this problem includes both the requested answer and the Python code used to
+compute it.
