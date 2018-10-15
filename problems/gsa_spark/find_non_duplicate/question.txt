@@ -1,0 +1,6 @@
+The file /resources/numbers.rar contains a large number of integers, each of which has a value of up to 300 million. 
+
+Each of those integers has been duplicated exactly once, except for one. What
+is that unique integer?  A correct solution to this problem includes both the
+correct answer and the Python code used to compute it.  One correct entry to
+this problem will be selected at random to be eligible for the prize.

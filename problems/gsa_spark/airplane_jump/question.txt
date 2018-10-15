@@ -1,0 +1,32 @@
+Realising he would never know his hash-tables from his hat-stand, Bob got tired
+of programming and decided to get a much more appropriate job as skydiving
+instructor.
+
+To his dismay, on his first day at work, he is presented with a maths problem.
+ 
+Imagine that N humans are in the queue for a skydiving jump, naively placing
+their lives in Bob’s incapable hands.
+
+Every second, one of two possibilities occurs:
+
+- The first human in the queue jumps from the aeroplane, with probability P
+- The first human in the queue hesitates, making the other humans in the queue
+wait, with probability (1 - P)
+
+The i-th human in the queue cannot jump from the aeroplane until all humans
+with indices 1 to (i - 1) have made the jump. Only one human can make the jump
+each second.
+
+Bob needs to calculate the expected value of the number of humans that have
+jumped after T seconds.
+
+Firmly aware of his own inadequacy pertaining to calculations of any kind, Bob
+has come to you for help.
+
+Compute the expected value of the number of humans that have jumped after t
+seconds for N = 40, t = 20, P = 0.7.
+
+A correct submission to this problem includes both the requested answer and the
+Python code used to compute it.  Ten correct entries to this problem will be
+selected at random to be eligible for the prize.
+
