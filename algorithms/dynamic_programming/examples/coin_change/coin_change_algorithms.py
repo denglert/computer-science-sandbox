@@ -11,6 +11,7 @@ def print_result(result):
     msg = "Number of possible combinations: {} | Number of calls: {}".format(combinations, nCalls)
     print(msg)
 
+
 def coin_change_recursion_brute_force(original_amount, coins):
 
     nCoins = len(coins)

@@ -8,16 +8,4 @@ for coin in coins:
     for i in range(coin,amount+1):
         combinations[i] += combinations[i-coin]
 
-#coin = 1
-#for i in range(coin,amount+1):
-#    combinations[i] += combinations[i-coin]
-#
-#print(combinations)
-#
-#coin = 1
-#for i in range(coin,amount+1):
-#    combinations[i] += combinations[i-coin]
-#
-#print(combinations)
-
 print("Number of combinations: {}".format(combinations[amount]))

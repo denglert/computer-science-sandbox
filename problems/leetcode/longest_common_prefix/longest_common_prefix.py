@@ -1,32 +1,27 @@
 #!/usr/bin/env python
 
 
-
-
-
 def longest_commont_prefix(string_list):
 
-    i = 0
+    if not string_list:
+        return ''
 
-    isCharMatch = True
-
-    str_lens = [len(str) in string_list]
-
-
-    while isCharMatch and i < min(str_lens):
-            
-
-        s = string_list[0][i]
+    for i,c1 in enumerate(string_list[0]):
 
         for str in string_list[1:]:
 
-            if str[i] != s:
-                isCharMatch = False
-                break
+            str_len = len(str)
+            
+            if i >= str_len:
+                return string_list[0][:i]
 
-        i += 1
+            if c1 != str[i]:
+                return string_list[0][:i]
+
+    return string_list[0]
+
+ 
     
-    return string_list[0][:i-1]
 
 
 string_list = ["flower","flow","flight"]
@@ -44,3 +39,27 @@ print("String list:")
 print(string_list)
 print(lcp)
 
+
+string_list = ["flow","flowi","flowe"]
+lcp = longest_commont_prefix(string_list)
+
+print("String list:")
+print(string_list)
+print(lcp)
+
+
+
+string_list = ["dog","racecar","car"]
+lcp = longest_commont_prefix(string_list)
+
+print("String list:")
+print(string_list)
+print(lcp)
+
+
+string_list = ["aa","a"]
+lcp = longest_commont_prefix(string_list)
+
+print("String list:")
+print(string_list)
+print(lcp)
