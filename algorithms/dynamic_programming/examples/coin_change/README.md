@@ -1,17 +1,25 @@
 # Coin change problems
 
+
+**Variations:**
+
+- [Find the minimum amount of coins needed for a given amount](./minimum_number_of_coins)
+    - Possible solution methods:
+        - Dynamic programming
+        - Greedy (optimal if the coin system is [canonical][canonical_coin_system])
+		- Recursive
+
+
+- [Find the number of possible combination to break an amount](./number_of_combinations)
+    - Possible solution methods:
+        - Dynamic programming
+		- Recursive
+
+
 **References:**
-- https://www.hackerrank.com/challenges/coin-change/problem
-- http://interactivepython.org/KKOkZ/courselib/static/pythonds/Recursion/DynamicProgramming.html
-- https://www.quora.com/What-is-an-easy-way-to-understand-the-coin-change-problem-in-dynamic-programming
-- http://www.algorithmist.com/index.php/Coin_Change
+
+- [Canonical Coin Systems for Change making Problems][canonical_coin_system]
 
 
-## Problem
 
-The country of England is antiquated enough to still rely on material tokens for currency. This is
-made up of pounds, £, and pence, p, and there are eight coins in general circulation:
-
-1p, 2p, 5p, 10p, 20p, 50p, £1 (100p) and £2 (200p).
-
-How many different ways can £5 be made, using any number of coins?
+[canonical_coin_system]: https://arxiv.org/abs/0809.0400
