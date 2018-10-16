@@ -4,7 +4,7 @@
 - https://en.wikipedia.org/wiki/Dynamic_programming
 
 
-[Wikipedia][dp]:
+[Wikipedia][wikipedia_dp]:
 
 > Dynamic programming is both a mathematical optimization method and a computer programming method. 
 > 
