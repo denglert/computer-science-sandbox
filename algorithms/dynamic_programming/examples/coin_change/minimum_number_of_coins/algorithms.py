@@ -1,20 +1,25 @@
 #!/usr/bin/env python
 
 
+import sys
+
 
 def dp_algo(coins, amount):
 
     nCalls = 0
 
-    minimum_ncoins_lookup_table = [1] + [0]*amount
-
+    minimum_ncoins_lookup_table = [0] + [sys.maxsize]*amount
 
     for coin in coins:
 
         for i in range(coin,amount+1):
 
             diff = i - coin
-            minimum_ncoins_lookup_table[i] = 1 + minimum_ncoins_lookup_table[diff]
+
+            new_proposal = 1 + minimum_ncoins_lookup_table[diff]
+
+            if new_proposal < minimum_ncoins_lookup_table[i]:
+                minimum_ncoins_lookup_table[i] = new_proposal
 
             nCalls += 1
 
